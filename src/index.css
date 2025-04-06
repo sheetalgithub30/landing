@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .swiper-pagination {
+    bottom: -2px !important; /* Adjust this as needed */
+    /* text-align: center; */
+    position: absolute; /* Ensure it's positioned correctly */
+    left: -100px !important;
+    /* right: 0; */
+  }
+  .swiper-pagination-bullet {
+    background-color: #976e1d4d !important; /* Active bullet color */
+    width: 20px !important; /* Set bullet size */
+    height: 20px !important; /* Set bullet size */
+    border-radius: 50% !important; /* Make them round */
+    margin: 0 5px; /* Adjust spacing between bullets */
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color:#F9A6024D !important; /* Active bullet color */
+    border-radius: 10px !important; /* Make them round */
+
+    width: 37px !important; /* Set bullet size */
+    height: 20px !important; /* Set bullet size */
+  }
+
+
+  @media (min-width: 600px) {
+    .swiper-pagination {
+      left: -500px !important; /* Change left value for larger screens */
+    }
+  }
+    
+
+
+
+
+  

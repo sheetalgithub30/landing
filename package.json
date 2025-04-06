@@ -1,0 +1,51 @@
+{
+  "name": "Influcent-landing",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.11.10",
+    "@cashfreepayments/cashfree-js": "^1.0.5",
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@sanity/cli": "^3.45.0",
+    "@sanity/client": "^6.19.1",
+    "@vercel/analytics": "^1.4.1",
+    "apollo-upload-client": "^16.0.0",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.4.5",
+    "emailjs-com": "^3.2.0",
+    "framer-motion": "^11.2.10",
+    "Influcent": "file:",
+    "Influcent_landing": "file:",
+    "Influcent-landing": "file:",
+    "Influcentlanding": "file:",
+    "react": "^18.2.0",
+    "react-date-range": "^2.0.1",
+    "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.6.4",
+    "react-icons": "^5.4.0",
+    "react-loader-spinner": "^6.1.6",
+    "react-router-dom": "^6.23.1",
+    "react-text-transition": "^3.1.0",
+    "swiper": "^11.1.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0"
+  }
+}

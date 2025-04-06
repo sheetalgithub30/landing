@@ -1,0 +1,11 @@
+body {
+ 
+    /* box-sizing: border-box; */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    /* background-color: black; */
+  }
+  ::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
