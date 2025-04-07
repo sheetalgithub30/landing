@@ -78,8 +78,8 @@ const Interactive = () => {
             return (
              <Box>
                 <Flex justifyContent="flex-start" alignItems="start">
-                   <Image src={data.icon} w="26px" h="26px" mt={1} />
-                   <Box ml={2}>
+                   <Image src={data.icon} w="24px" h="24px" mt="4px" />
+                   <Box ml="16px">
                     <Text fontSize="20px" fontWeight="500">{data.heading}</Text>
                     <Text color="#000000B2" fontSize="14px" fontWeight="400">{data.desc}</Text>
                    </Box>

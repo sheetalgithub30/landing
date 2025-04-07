@@ -38,7 +38,7 @@ const Index = ({ backgroundColor }) => {
             <Button
               fontSize="14px"
               fontWeight="500"
-              width="165px"
+              width={isGreaterThan600?"165px":"125px"}
               height="40px"
               border="1px solid #00000033"
               fontFamily="Inter"

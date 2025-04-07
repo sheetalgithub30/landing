@@ -64,6 +64,8 @@ function Index() {
   const [icon, setIcon] = useState("i1");
   const [image, setImage] = useState("i1");
 
+
+
   return (
     <Flex flexDir="column" fontFamily="Hanken Grotesk">
       <Navbar backgroundColor="white" />
@@ -77,7 +79,7 @@ function Index() {
       >
         <Flex
           h="100%"
-          w={isGreaterThan600 ? "85%" : "99%"}
+          w={isGreaterThan600 ? "85%" : "93%"}
           my={isGreaterThan600 ? "140px" : ""}
           mx="auto"
           justifyContent="space-between"
@@ -121,14 +123,14 @@ function Index() {
               <Flex
                 justifyContent="space-between"
                 mt="30px"
-                w={isGreaterThan600 ? "47%" : "90%"}
+                w={isGreaterThan600 ? "47%" : "80%"}
                 mb={isGreaterThan600 ? "" : "10px"}
               >
                 <a href="https://calendly.com/shubhamg-jgu/30min">
 
                 <Button
                   px="0"
-                  w="160px"
+                  w={isGreaterThan600?"160px":"140px"}
                   flexShrink={1}
                   bgColor="#171716"
                   color="white"
@@ -145,7 +147,7 @@ function Index() {
               <a href="https://www.influcent.com/contact">
                 <Button
                   px="0"
-                  w="160px"
+                  w={isGreaterThan600?"160px":"140px"}
                   flexShrink={1}
                   bgColor="white"
                   color="#171716"
@@ -156,6 +158,7 @@ function Index() {
                   fontFamily="Hanken Grotesk"
                   border="1px solid black"
                   _hover="none"
+                  // ml={4}
                 >
                   Contact Us
                 </Button>
@@ -179,10 +182,10 @@ function Index() {
             <Text
               fontSize={isGreaterThan600?"46px":"36px"}
               fontWeight="300"
-              lineHeight={isGreaterThan600 ? "" : "60px"}
+              lineHeight={isGreaterThan600 ? "" : "40px"}
             >
               Designed for{" "}
-              <Text as="span" fontWeight="400">
+              <Text as="span" fontWeight="600">
                 Coaches & Healers Like You
               </Text>
             </Text>
@@ -192,6 +195,7 @@ function Index() {
               fontWeight="400"
               color="#00000099"
               w={isGreaterThan600 ? "70%" : ""}
+              mt={isGreaterThan600?"":"6px"}
             >
               Empowering you to share your wisdom and grow your income through
               1:1 consultations, course sales, and digital offerings - all in
@@ -215,20 +219,22 @@ function Index() {
                       setIcon("i1");
                       setImage("i1");
                     }}
+
+
                   >
                     {icon === "i1" && (
                       <Image
                         src={icon1}
-                        mt={3}
-                        transition="left 0.5s ease, opacity 0.5s ease 5s" // Transition the icon's position and opacity
-                      />
+                        mt="10px"                      
+                        width={isGreaterThan600?"28px":"24px"}
+                                            />
                     )}
-                    <Box ml={2}>
+                    <Box ml="16px">
                       <Text fontSize="22px" fontWeight="400">
                         Seamless 1.1 Consultations
                       </Text>
 
-                      {icon === "i1" && (
+                      {image === "i1" && (
                         <Text
                           fontSize="16px"
                           fontWeight="400"
@@ -256,19 +262,21 @@ function Index() {
                       setIcon("i2");
                       setImage("i2");
                     }}
+                    
                   >
                     {icon === "i2" && (
                       <Image
                         src={icon2}
-                        mt={1}
-                        transition="left 0.5s ease, opacity 0.5s ease 5s" // Transition the icon's position and opacity
+                        mt="5px"
+                        width={isGreaterThan600?"28px":"24px"}
+
                       />
                     )}
-                    <Box ml={2}>
+                    <Box ml="16px">
                       <Text fontSize="22px" fontWeight="400">
                         Sell Your Own Video Programs
                       </Text>
-                      {icon === "i2" && (
+                      {image === "i2" && (
                         <Text
                           fontSize="16px"
                           fontWeight="400"
@@ -298,16 +306,17 @@ function Index() {
                     {icon === "i3" && (
                       <Image
                         src={icon3}
-                        mt={2}
-                        transition="left 0.5s ease, opacity 0.5s ease 5s" // Transition the icon's position and opacity
+                        mt="5px"
+                        width={isGreaterThan600?"28px":"24px"}
+
                       />
                     )}
-                    <Box ml={2}>
+                    <Box ml="16px">
                       <Text fontSize="22px" fontWeight="400">
                         Effortless Bookings & Payments
                       </Text>
 
-                      {icon === "i3" && (
+                      {image === "i3" && (
                         <Text
                           fontSize="16px"
                           fontWeight="400"
@@ -338,15 +347,17 @@ function Index() {
                     {icon === "i4" && (
                       <Image
                         src={icon4}
-                        mt={1}
+                        mt="5px"
                         transition="left 0.5s ease, opacity 0.5s ease 5s" // Transition the icon's position and opacity
+                        width={isGreaterThan600?"28px":"24px"}
+
                       />
                     )}
-                    <Box ml={2}>
+                    <Box ml="16px">
                       <Text fontSize="22px" fontWeight="400">
                         Tech-Free Setup
                       </Text>
-                      {icon === "i4" && (
+                      {image === "i4" && (
                         <Text
                           fontSize="16px"
                           fontWeight="400"
@@ -386,7 +397,7 @@ function Index() {
             </Box>
           )}
 
-          <Flex mt={isGreaterThan600 ? -16 : 16}
+          <Flex mt={isGreaterThan600 ? -16 : 7}
            justifyContent={isGreaterThan600?"":"center"}
           >
             <a href="https://calendly.com/shubhamg-jgu/30min">
@@ -415,7 +426,7 @@ function Index() {
         <Flex w={isGreaterThan600 ? "99%" : "99%"} justifyContent="center">
           <Swiper
             modules={[Autoplay, Pagination]}
-            style={{ height: isGreaterThan600?"500px":"700px" }}
+            style={{ height: isGreaterThan600?"500px":"430px" }}
             // spaceBetween={isGreaterThan600 ? 20 : 60} // Adjust the spacing between slides if needed
             slidesPerView={1}
             loop={true} // Enable looping
@@ -466,7 +477,7 @@ function Index() {
                   />
 
                   <Box>
-                    <Text fontSize="24px" fontWeight="400">
+                    <Text fontSize={isGreaterThan600?"24px":"16px"} fontWeight="400">
                       Working with Influcent was a game changer for our
                       business! They helped us design a stunning landing page
                       that perfectly captures our brand's essence. Not only
@@ -477,7 +488,7 @@ function Index() {
 
                     <Text
                       textColor="#00000099"
-                      fontSize="24px"
+                      fontSize={isGreaterThan600?"24px":"16px"}
                       fontWeight="500"
                       mt="40px"
                     >
@@ -528,7 +539,7 @@ function Index() {
                   />
 
                   <Box>
-                    <Text fontSize="24px" fontWeight="400">
+                    <Text fontSize={isGreaterThan600?"24px":"16px"} fontWeight="400">
                       Before Influcent, managing my services felt
                       chaotic—juggling bookings, payments, and keeping my online
                       presence updated. But they took care of everything, and
@@ -538,7 +549,7 @@ function Index() {
 
                     <Text
                       textColor="#00000099"
-                      fontSize="24px"
+fontSize={isGreaterThan600?"24px":"16px"}
                       fontWeight="500"
                       mt="40px"
                     >
@@ -588,7 +599,7 @@ function Index() {
                   />
 
                   <Box>
-                    <Text fontSize="24px" fontWeight="400">
+                    <Text fontSize={isGreaterThan600?"24px":"16px"} fontWeight="400">
                       I had no idea where to start when it came to setting up my
                       website and monetizing my services. The team at Influcent
                       guided me through everything, and now I have a solid
@@ -598,7 +609,7 @@ function Index() {
 
                     <Text
                       textColor="#00000099"
-                      fontSize="24px"
+                      fontSize={isGreaterThan600?"24px":"16px"}
                       fontWeight="500"
                       mt="40px"
                     >
@@ -629,7 +640,7 @@ function Index() {
       {/* How it works  */}
       <Box bgColor="#FAF5FF">
         <Flex
-          w={isGreaterThan600 ? "83%" : "90%"}
+          w={isGreaterThan600 ? "83%" : "93%"}
           mx="auto"
           justifyContent="space-around"
           alignItems="center"
@@ -653,8 +664,8 @@ function Index() {
               <Flex justifyContent="flex-start" alignItems="center">
                 <Center>
                   <Box
-                    width="80px"
-                    height="80px"
+                    width={isGreaterThan600?"80px":"60px"}
+                    height={isGreaterThan600?"80px":"60px"}
                     borderRadius="50%"
                     display="flex"
                     alignItems="center"
@@ -685,16 +696,18 @@ function Index() {
 
               <Box
                 borderLeft="1px dotted #00000080" // Create the dotted line between steps
-                marginLeft={isGreaterThan600 ? "65px" : "40px"}
+                marginLeft={isGreaterThan600 ? "40px" : "30px"}
                 height={isGreaterThan600 ? "60px" : "90px"} // Adjust the height of the dotted line
                 position="relative"
+                mt={isGreaterThan600?"":"-16px"}
+                mb={isGreaterThan600?"":"-16px"}
               />
 
               <Flex justifyContent="flex-start" alignItems="center">
                 <Center>
                   <Box
-                    width="80px"
-                    height="80px"
+                  width={isGreaterThan600?"80px":"60px"}
+                  height={isGreaterThan600?"80px":"60px"}
                     borderRadius="50%"
                     display="flex"
                     alignItems="center"
@@ -725,17 +738,19 @@ function Index() {
 
               <Box
                 borderLeft="1px dotted #00000080" // Create the dotted line between steps
-                marginLeft={isGreaterThan600 ? "65px" : "40px"}
-                height={isGreaterThan600 ? "60px" : "90px"}
+                marginLeft={isGreaterThan600 ? "40px" : "30px"}
+                height={isGreaterThan600 ? "60px" : "90px"} // Adjust the height of the dotted line
                 position="relative"
-                top="-7px"
+                mt={isGreaterThan600?"":"-16px"}
+                mb={isGreaterThan600?"":"-16px"}
+
               />
 
               <Flex justifyContent="flex-start" alignItems="center">
                 <Center>
                   <Box
-                    width="80px"
-                    height="80px"
+                    width={isGreaterThan600?"80px":"60px"}
+                    height={isGreaterThan600?"80px":"60px"}
                     borderRadius="50%"
                     display="flex"
                     alignItems="center"
@@ -1101,7 +1116,7 @@ function Index() {
           w={isGreaterThan600 ? "" : "85%"}
           textAlign={isGreaterThan600 ? "" : "center"}
         >
-          <Text fontSize={isGreaterThan600?"42px":"36px"} fontWeight="600">
+          <Text fontSize={isGreaterThan600?"42px":"36px"} fontWeight="600" lineHeight="40px">
             Ready to Scale Your Coaching Business?
           </Text>
         <a href="https://calendly.com/shubhamg-jgu/30min">
@@ -1111,7 +1126,7 @@ function Index() {
             w="278px"
             fontWeight="600"
             fontSize="17px"
-            h="51px"
+            h="44px"
             borderRadius="5px"
             mt={10}
             _hover="none"

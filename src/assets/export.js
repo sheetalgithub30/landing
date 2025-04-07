@@ -8,7 +8,7 @@ import influcentLogo from "./influcentLogo.svg";
 import hero from "./hero.png";
 import ready1 from "./ready1.svg";
 import ready2 from "./ready2.svg";
-import work from "./work.svg";
+import work from "./work.png";
 import quotes from "./quotes.svg";
 import icon1 from "./icon1.svg";
 import icon2 from "./icon2.svg";
