@@ -124,6 +124,8 @@ function Index() {
                 w={isGreaterThan600 ? "47%" : "90%"}
                 mb={isGreaterThan600 ? "" : "10px"}
               >
+                <a href="https://calendly.com/shubhamg-jgu/30min">
+
                 <Button
                   px="0"
                   w="160px"
@@ -139,7 +141,8 @@ function Index() {
                 >
                   Book a Demo
                 </Button>
-
+                </a>
+              <a href="https://www.influcent.com/contact">
                 <Button
                   px="0"
                   w="160px"
@@ -156,6 +159,7 @@ function Index() {
                 >
                   Contact Us
                 </Button>
+              </a>
               </Flex>
             </Box>
           </Box>
@@ -385,6 +389,7 @@ function Index() {
           <Flex mt={isGreaterThan600 ? -16 : 16}
            justifyContent={isGreaterThan600?"":"center"}
           >
+            <a href="https://calendly.com/shubhamg-jgu/30min">
             <Button
               px="0"
               w="160px"
@@ -400,6 +405,7 @@ function Index() {
             >
               Book a Demo
             </Button>
+            </a>
           </Flex>
         </Box>
       </Box>
@@ -786,6 +792,8 @@ function Index() {
           <Text color="#00000099" fontSize={isGreaterThan600?"18px":"16px"} fontWeight="400" mt="10px">
             Got Questions? We’ve Got Answers!
           </Text>
+          <a href="https://www.influcent.com/contact">
+
           <Button
             bgColor="#171716"
             color="white"
@@ -799,6 +807,7 @@ function Index() {
           >
             Contact Us
           </Button>
+          </a>
         </Box>
         <Box
           w={isGreaterThan600 ? "50%" : "100%"}
@@ -1095,6 +1104,7 @@ function Index() {
           <Text fontSize={isGreaterThan600?"42px":"36px"} fontWeight="600">
             Ready to Scale Your Coaching Business?
           </Text>
+        <a href="https://calendly.com/shubhamg-jgu/30min">
           <Button
             bgColor="#171716"
             color="white"
@@ -1108,6 +1118,7 @@ function Index() {
           >
             Book a Free Strategy Call Now
           </Button>
+          </a>
         </Flex>
 
         {isGreaterThan600 && <Image src={ready2} mr={6} />}
